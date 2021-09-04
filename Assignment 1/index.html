@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Time Table</h1>
+    <table bgcolor= " lightgrey" border="5" cellspacing = "10"  cellpadding = "10">
+        <thead>
+            <tr>
+                <th> Days</th>
+                <th> 1</th>
+                <th> 2</th>
+                <th> 3</th>
+                <th>    </th>
+                <th> 4</th>
+                <th> 5</th>
+                <th> 6</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+               
+                <td>Monday</td>
+                <td>maths</td>
+                <td>hindi</td>
+                <td>english</td>
+                <td rowspan="6">b <br> r <br> e <br> a <br> k</td>
+                <td>lib</td>
+                <td colspan="2">Science</td>
+                
+            </tr>
+
+            <tr>
+               
+                <td>Tuesday</td>
+                <td>science</td>
+                <td>english</td>
+                <td>maths</td>
+                
+                <td>maths</td>
+                <td>hindi</td>
+                <td>lib</td>
+            </tr>
+            <tr>
+               
+                <td>wednesday</td>
+                <td>hindi</td>
+                <td colspan="2">science</td>
+                
+                
+                <td colspan="2">games</td>
+                
+                <td>english</td>
+            </tr>
+            <tr>
+               
+                <td>Thursday</td>
+                <td>hindi</td>
+                <td colspan="2">maths</td>
+                
+                
+                <td>english</td>
+                <td>science</td>
+                <td>sst</td>
+            </tr>
+            <tr>
+               
+                <td>Friday</td>
+                <td colspan="2">sst</td>
+                
+                <td>lib</td>
+                
+                <td>maths</td>
+                <td>hindi</td>
+                <td>science</td>
+            </tr>
+            <tr>
+               
+                    <td>Saturday</td>
+                    <td>english</td>
+                    <td colspan="2">games</td>
+                    
+                   
+                    <td colspan="2">lib</td>
+                    
+                    <td>hindi</td>
+                </tr>
+    
+
+        </tbody>
+        <tfoot>
+            <th colspan="8">
+                This is for class IX
+            </th>
+
+        </tfoot>
+
+    </table>
+    <br>
+    <br>
+
+    <hr >
+    
+    <h1> School Form</h1>
+
+  <fieldset>
+      
+    <legend>Personal Information</legend>
+    <form action="/" method="POST">
+    
+        
+            <label for="firstname">firstname</label>
+            <input type="text" id="firstname" placeholder="FirstName">
+
+        
+            <label for="lastname">lastname</label>    
+            <input type="text"  id="lastname"  placeholder="LastName">
+        
+        
+            <br>
+            <br>
+        
+        
+        Male 
+        <input type="radio" name="gender">
+        female
+        <input type="radio" name="gender">
+        others
+        <input type="radio" name="gender">
+
+        <br>
+        <br>
+       
+        <label for="dob"> Date Of Birth:</label>
+        <input type="date" id="dob">
+
+        <br>
+        <br>
+       
+        
+        <label for="email">E-mail:</label>
+        <input type="text" placeholder="Enter Email" id="email" required>
+       
+        <br>
+        <br>
+       
+        
+        <label for="numbr">Phone No:</label>
+        <!-- <input type="tel" maxlength="2" placeholder="Country Code"> -->
+        <input type="tel" id="numbr" maxlength="10" placeholder="+91">
+       
+        <br>
+        <br>
+       
+        
+        <label for="height">Height:</label>
+        <input type="text" id="height"  placeholder="Enter your height in cm">
+
+
+</fieldset>
+<fieldset>
+    <legend>Education</legend>
+
+     
+    <label for="schoolname">School</label>
+    <input type="text" id="schoolname" placeholder="School Name">
+    <br>
+    <br>
+
+    <label for="class">    Class:</label>
+    <input type="text " id="class" placeholder="class">
+    <br>
+    <br>
+    Stream:
+    <select >
+        <option > Stream</option>
+        <option > science</option>
+        <option > commerce</option>
+        <option > humanities</option>
+    </select>
+    <br>
+    <br>
+    Marksheet:
+    <input type="file">
+
+
+
+
+
+
+</fieldset>
+<br>
+<button>
+    submit
+</button>
+</form>
+</body>
+</html>
