@@ -1,0 +1,54 @@
+
+/* in the place of font-weight /  font-style/ and other properties we can use just font */
+/* i have used them ...so that i can learn and make sure how these things get change */
+/* same goes with padding and margine...just a lil different */
+
+body{
+    background-color:azure;
+}
+img{
+   
+    position: absolute;
+    margin-top: 0.5em;
+    margin-left:0.8em ;
+
+    width: 75px;
+}
+h1{ 
+    
+    padding-left: 2.7em;
+    border: 2px solid black;
+
+    background-color: cornflowerblue;
+    
+    margin-left: 5px;
+}
+div  {
+    margin-left: 0.3em;
+    font-family: 'Courier New', Courier, monospace;
+   
+     font-weight: bold ;
+    padding-left: 0.8em;
+    border: 0.2em solid  darkslategray;
+    background-color: lightblue;
+    position: sticky;
+    top: -1px;
+}
+ul{
+    
+   padding-left:0.5em ;
+   margin-left: 0.5em;
+   margin-top: 1em;
+    list-style: none;
+   
+    
+}
+li{
+    background-color:papayawhip;
+    font-size: 1em;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style:oblique;
+    margin-top: 1em;
+    border-bottom: 1px solid orange;
+    border-top: 1px solid orange;
+}
