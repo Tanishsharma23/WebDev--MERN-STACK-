@@ -1,0 +1,803 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    background-color: #333533;
+}
+.navbar-brand{
+    font-weight: 500;
+    text-shadow: 5px 5px 0px black;
+}
+.navbar-toggler{
+    margin-left: -50px !important;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.nav-link div{
+    transform: scaleX(0);
+    height: 0.1px;
+    transition: 200ms;
+}
+.nav-link:hover div{
+    transform: scaleX(1);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.toggler-icon{
+    width: 30px;
+    height: 2.5px;
+    display: block;
+    margin: 7px 0px;
+    background-color: white;
+    transition: 300ms;
+
+}
+@media screen and (max-width: 1500px){
+    .nav-link{
+        font-size: 2vh;
+    }
+}
+@media screen and (max-width: 1200px){
+    .nav-link{
+        font-size: 1.8vh;
+    }
+}
+#intro{
+    width: 100vw;
+    height: 655px;
+    clip-path: polygon(0% 0%,100% 0%,100% 90%,0% 80%);
+    border: 1px solid black;
+}
+#special{
+    width: 90%;
+    height: 50%;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#special img{
+    margin-left: 50px;
+    animation: 1s cubic-bezier(0.61, 1, 0.88, 1) 1 normal forwards slide-img-left;
+    opacity: 0.4;
+}
+@keyframes slide-img-left{
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateX(-50px);
+        opacity: 1;
+    }
+}
+#special article{
+    width: 50%;
+    height: 62%;
+
+}
+#special article div:first-of-type div:first-of-type{
+    top: 87px;
+    animation: 1s cubic-bezier(0.61, 1, 0.88, 1) 200ms 1 normal forwards slide-heading-up;
+}
+@keyframes slide-heading-up{
+    100%{
+        transform: translateY(-87px);
+    }
+}
+#special article div:first-of-type div:nth-of-type(1) h1{
+    font: 3.5rem 'Libre Baskerville';
+}
+#special article div:first-of-type div:nth-of-type(2){
+    top: 78px;
+    width: 100%;
+    height: 35%;
+}
+#special article div:first-of-type div:nth-of-type(3){
+    top: 78px;
+    left: 50px;
+    animation: 800ms cubic-bezier(0.61, 1, 0.88, 1) 1 normal forwards slide-para-left;
+}
+@keyframes slide-para-left{
+    100%{
+        transform: translateX(-50px);
+    }
+}
+#special article div:first-of-type div:last-of-type p{
+    font-family: 'Karla';
+    font-weight: 900;
+    line-height: 35px;
+    color: #b7b7a4;
+    opacity: 0.2;
+    animation: 1s cubic-bezier(0.61, 1, 0.88, 1) 1 normal forwards blur;
+}
+@keyframes blur{
+    100%{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 1163px){
+    h1{
+        font-size: 3rem !important;
+    }
+    article p{
+        font-size: 1.5rem !important;
+        margin-top: -10px;
+        line-height: 30px !important;
+    }
+    #special img{
+        width: 220px;
+        margin-top: 20px;
+        margin-left: 90px;
+    }
+    i{
+        font-size: 1.8rem !important;
+        margin-top: -20px;
+    }
+}
+@media screen and (max-width: 997px){
+    h1{
+        font-size: 2.5rem !important;
+    }
+    article p{
+        font-size: 1.4rem !important;
+        margin-top: -20px;
+        line-height: 28px !important;
+    }
+    #back-div{
+        margin-top: -23px;
+    }
+    #special img{
+        width: 200px;
+    }
+
+}
+@media screen and (max-width: 833px){
+    h1{
+        font-size: 2.23rem !important;
+    }
+    article p{
+        margin-top: -25px;
+    }
+    #back-div{
+        margin-top: -25px;
+    }
+    #special img{
+        width: 180px;
+    }
+}
+@media screen and (max-width: 743px){
+    h1{
+        font-size: 2rem !important;
+    }
+    #back-div{
+        margin-top: -30px;
+    }
+    article p{
+        margin-top: -30px;
+        line-height: 25px !important;
+    }
+}
+@media screen and (max-width: 683px){
+    #intro{
+        height: 550px;
+    }
+    #special{
+        flex-wrap: wrap;
+        margin-top: 130px;
+    }
+    h1{
+        font-size: 1.7rem !important;
+    }
+    #back-div{
+        margin-top: -40px;
+    }
+    article p{
+        font-size: 1.2rem !important;
+        line-height: 20px !important;
+    }
+    #special article div:first-of-type div:first-of-type{
+        top: 70px;
+        animation: 1s cubic-bezier(0.61, 1, 0.88, 1) 200ms 1 normal forwards slide-heading-up;
+    }
+    @keyframes slide-heading-up{
+        100%{
+            transform: translateY(-70px);
+        }
+    }
+    
+}
+@media screen and (max-width: 602px){
+    #intro{
+        height: 600px;
+    }
+    #special{
+        margin-top: 80px;
+        height: 50%;
+    }
+    #special img{
+        width: 160px;
+    }
+    article{
+        margin-left: 70px;
+    }
+    h1{
+        font-size: 1.4rem !important;
+        margin-top: 15px;
+    }
+    #back-div{
+        margin-top: -33px;
+    }
+    article p{
+        font-size: 1rem !important;
+
+    }
+}
+@media screen and (max-width: 457px){
+    #intro{
+        width: 457px;
+    }
+    #special img{
+        width: 140px;
+    }
+    article{
+        margin-left: 60px;
+    }
+    h1{
+        font-size: 1.1rem !important;
+        margin-top: 20px;
+    }
+    article p{
+        font-size: 0.8rem !important;
+        line-height: 18px !important;
+    }
+    i{
+        font-size: 1.4rem !important;
+    }
+}
+h2{
+    font-size: 2.25rem;
+    margin-left: 70px;
+}
+#skills{ 
+    flex-wrap: wrap;
+}
+#skills div{
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 20px;
+    padding: 10px 0px;
+    box-shadow: 0.5px 0px #ccc,
+                -0.5px 0px #ccc,
+                0px 1.5px #06d6a0;
+}
+#skills div h3{
+    font: 600 1.4rem 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#skills ul{
+    font: 400 1.2rem 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#skills div ul li{
+    margin: 14px auto;
+    transition: 250ms 150ms;
+}
+#skills div ul li:hover{
+    transform: translateX(15px);
+}
+@media screen and (max-width: 457px){
+    #skills{
+        width: 457px;
+    }
+}
+#works{
+    width: 100vw;
+    height: 2100px;
+    background-color: #e7e7e7;
+    margin-top: 60px;
+    padding-top: 120px;
+    clip-path: polygon(0 2.8%, 100% 0%, 100% 100%, 0 97.2%);
+}
+.card{
+    margin-top: 70px;
+    border: none;
+}
+
+.white-button{
+    border: none;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500; 
+    transition: background-color 200ms;
+}
+.white-button:hover{
+    background-color: #ccdbdc;
+    cursor: grab;
+}
+.card-title{
+    font-size: 2rem;
+}
+.card p{
+    font-size: 1.16rem;
+}
+.color-button button{
+    margin-top: 20px;
+    font-size: 1rem !important;
+}
+.color-button button:hover{
+    opacity: 1 !important;
+
+}
+.color-button button:focus{
+    box-shadow: none;
+}
+.first img:nth-of-type(3){
+    animation: img1 8s linear infinite normal;
+}
+.first img:nth-of-type(2){
+    animation: img2 8s linear infinite normal;
+}
+.first img:nth-of-type(1){
+    animation: img3 8s linear infinite normal;
+}
+@keyframes img1{
+    33%{
+        z-index: 1;
+    }
+    66%{
+        z-index: 0;
+    }
+    100%{
+        z-index: 0;
+    }
+}
+@keyframes img2{
+    33%{
+        z-index: 0;
+    }
+    66%{
+        z-index: 1;
+    }
+    100%{
+        z-index: 0;
+    }
+}
+@keyframes img3{
+    33%{
+        z-index: 0;
+    }
+    66%{
+        z-index: 0;
+    }
+    100%{
+        z-index: 1;
+    }
+}
+.second div:first-of-type{
+    margin-top: 7px;
+    transform: scaleX(0);
+    transition: 400ms;
+}
+.second div:last-of-type{
+    margin-top: 210px;
+    transform: scaleX(0);
+    transition: 400ms;
+}
+.second:hover div{
+    transform: scaleX(0.8);
+}
+.second h3{
+    font-size: 1.15rem;
+    transform: translateY(-15px) scale(0);
+    transition: 400ms;
+}
+.second:hover h3{
+    transform: translateY(20px) scale(1);
+}
+.opaque-div{
+    background-color: black;
+    opacity: 0;
+    transition: opacity 400ms;
+}
+.first:hover .opaque-div{
+    opacity: 0.6;
+}
+.scrolled.fade-in-bottom{
+    animation: fade-in-bottom 1s cubic-bezier(0.33, 1, 0.68, 1) both;
+}
+@keyframes fade-in-bottom{
+    0%{
+        -webkit-transform: translateY(200px);
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.js-scroll{
+    opacity: 0;
+    transition: opacity 300ms;
+}
+@media screen and (max-width: 1400px){
+    .card-body p{
+        line-height: 23px !important;
+    }
+    .color-button{
+        width: 45% !important;
+    }
+    #linkedin .card-body div:first-of-type{
+        width: 62% !important;
+    }
+    #huluclone .card-body div:first-of-type{
+        width: 92% !important;
+    }
+    #kollabspace .card-body div:first-of-type{
+        width: 60% !important;
+    }
+    #tambola .card-body div:first-of-type{
+        width: 50% !important;
+    }
+    #githubexplorer .card-body div:first-of-type{
+        width: 44% !important;
+    }
+}
+@media screen and (max-width: 1200px){
+    .first{
+        height: 90% !important;
+        width: 47% !important;
+    }
+    .second h3{
+        margin-top: -5px;
+        font-size: 1.05rem !important;
+    }
+    .second div:last-of-type{
+        margin-top: 188px;
+    }
+    .color-button{
+        width: 53% !important;
+    }
+    #linkedin .card-body div:first-of-type{
+        width: 73% !important;
+    }
+    #huluclone .card-body div:first-of-type{
+        width: 107% !important;
+    }
+    #kollabspace .card-body div:first-of-type{
+        width: 72% !important;
+    } 
+    #tambola .card-body div:first-of-type{
+        width: 60% !important;
+    }
+    #githubexplorer .card-body div:first-of-type{
+        width: 52% !important;
+    }
+}
+@media screen and (max-width: 993px){
+    #works{
+        height: 1950px;
+    }
+    .card{
+        margin-bottom: -30px !important;
+    }
+    .first{
+        height: 85% !important;
+    }
+    .card-title{
+        font-size: 2rem !important;
+    }
+    .white-button{
+        font-size: 0.85rem;
+        margin-top: -4px;
+        padding: 5px 8px !important;
+    }
+    #linkedin .card-body div:first-of-type{
+        width: 80% !important;
+    }
+    #huluclone .card-body div:first-of-type{
+        width: 115% !important;
+    }
+    #kollabspace .card-body div:first-of-type{
+        width: 94% !important;
+    }
+    #tambola .card-body div:first-of-type{
+        width: 65% !important;
+    }
+    #githubexplorer .card-body div:first-of-type{
+        width: 56% !important;
+    }
+    .card-body p{
+        font-size: 1.1rem !important;
+        line-height: 23px !important;
+    }
+    .color-button{
+        width: 48% !important;
+    }
+    .color-button button{
+        font-size: 1.05rem !important;
+        padding: 6px 17px !important;
+        border-radius: 3px !important;
+    }
+    .second div:last-of-type{
+        margin-top: 188px;
+    }
+    .second h3{
+        margin-top: -10px;
+        font-size: 1.1rem !important;
+    }
+}
+@media screen and (max-width: 992px){
+    #works{
+        height: 1750px;
+    }
+    .card{
+        margin-bottom: -70px !important;
+    }
+    .first{
+        height: 65% !important;
+    }
+    .card-title{
+        font-size: 1.6rem !important;
+    }
+    .white-button{
+        font-size: 0.73rem;
+        height: 25px;
+        margin-top: 7px;
+        padding: 4px 7px !important;
+    }
+    #linkedin .card-body div:first-of-type{
+        width: 92% !important;
+    }
+    #huluclone .card-body div:first-of-type{
+        flex-wrap: wrap !important;
+        height:0px;
+        width: 114% !important;
+    }
+    #huluclone .card-body p{
+        margin-top: 75px !important;
+    }
+    #kollabspace .card-body div:first-of-type{
+        width: 105% !important;
+    }
+    #kollabspace .card-body p{
+        margin-top: 8px !important;
+    }
+    #tambola .card-body div:first-of-type{
+        width: 75% !important;
+    }
+    #githubexplorer .card-body div:first-of-type{
+        width: 65% !important;
+    }
+    .card-body p{
+        font-size: 0.9rem !important;
+        line-height: 17px !important;
+    }
+    .color-button{
+        margin-top: -12px;
+        width: 56% !important;
+    }
+    .color-button button{
+        font-size: 0.85rem !important;
+        padding: 5px 16px !important;
+        border-radius: 3px !important;
+    }
+    .second div:last-of-type{
+        margin-top: 135px;
+    }
+    .second h3{
+        margin-top: -12px;
+        font-size: 1rem !important;
+    }
+}
+@media screen and (max-width: 769px){
+    .first{
+        width: 100% !important;
+        height: 80% !important;
+    }
+    .second div:last-of-type{
+        margin-top: 165px;
+    }
+    .second h3{
+        margin-top: -12px;
+        font-size: 1.2rem !important;
+    }
+    .third{
+        width: 100% !important;
+    }
+    #huluclone{
+        margin-top: 320px;
+    }
+    #huluclone .card-body p{
+        margin-top: 45px !important;
+    }
+    #kollabspace{
+        margin-top: 325px;
+    }
+    #tambola{
+        margin-top: 390px;
+    }
+    #githubexplorer{
+        margin-top: 320px;
+    }
+}
+@media screen and (max-width: 768px){
+    #works{
+        height: 3330px !important;
+    }
+    .card .row{
+        width: 400px !important;
+        margin-bottom: 60px !important;
+    }
+    .card-body{
+        margin-top: 10px;
+    }
+    .card-title{
+        font-size: 1.85rem !important;
+    }
+    .card p{
+        font-size: 1.3rem !important;
+        line-height: 25px !important;
+    }
+    .color-button button{
+        font-size: 1.3rem !important;
+        padding: 8px 23px !important;
+    }
+    .white-button{
+        font-size: 0.95rem !important;
+        padding: 2px 8px !important;
+        height: 30px !important;
+    }
+    .color-button{
+        width: 60% !important;
+    }
+    #linkedin .card-body div:first-of-type{
+        width: 83% !important;
+    }
+    #huluclone .card-body div:first-of-type{
+        width: 118% !important;
+    }
+    #kollabspace .card-body div:first-of-type{
+        width: 80% !important;
+    }
+    #tambola .card-body div:first-of-type{
+        width: 68% !important;
+    }
+    #githubexplorer{
+        margin-top: 300px;
+    }
+    #githubexplorer .card-body div:first-of-type{
+        width: 59% !important;
+    }
+}
+@media screen and (max-width: 546px){
+    #works{
+        height: 3340px !important;
+    }
+    #huluclone .card-body div:first-of-type{
+        width: 100% !important;
+    }
+    #huluclone .card-body p{
+        margin-top: 85px !important;
+    }
+    #kollabspace{
+        margin-top: 360px;
+    }
+}
+@media screen and (max-width: 457px){
+    #works{
+        width: 457px;
+    }
+}
+#achievements{
+    width: 100vw;
+    height: 700px;
+    background-color: #cbcbcb;
+    padding-top: 100px;    
+    margin-top: -95px;
+    clip-path: polygon(0% 0%, 100% 8%, 100% 92%, 0 100%);
+}
+@media screen and (max-width: 577px){
+    #achievements{
+        height: 790px;
+    }
+}
+@media screen and (max-width: 457px){
+    #achievements{
+        width: 457px;
+        
+    }
+}
+@media screen and (max-width: 576px){
+    .item-div{
+        width: 457px !important;
+    }
+}
+#contact-div{
+    margin-top: 60px;
+}
+#contact{
+    border-radius: 20px;
+    width: 1070px;
+    background-color: #eceaea;
+    font-size: 0.85rem;
+}
+#contact p{
+    font-weight: 500;
+}
+form div:nth-of-type(1), form div:nth-of-type(2){
+    margin-bottom: 35px;
+}
+label{
+    font-weight: 500;
+}
+input, textarea{
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0.4px 0.4px #ccc,
+                -0.4px -0.4px #ccc;
+}
+textarea{
+    height: 210px;
+}
+input::placeholder, textarea::placeholder{
+    font-weight: 500;
+    opacity: 0.5;
+}
+input:focus::placeholder, textarea:focus::placeholder{
+    opacity: 0.9;
+}
+input:focus,textarea:focus{
+    outline: 1px solid #a2d2ff !important;
+}
+form button{
+    font-weight: 500 !important;
+    background-color: #d3d3d3 !important;
+    opacity: 0.6;
+}
+form button:hover{
+    opacity: 1 !important;
+}
+form button:focus{
+    box-shadow: none !important;
+}
+@media screen and (max-width: 576px){
+    #contact{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 500px){
+    #contact{
+        width: 457px;
+    }
+}
+@media screen and (max-width: 576px){
+    #handles{
+        width: 457px !important;
+    }
+}
+footer i{
+    animation: swipe 450ms linear infinite alternate;
+}
+@keyframes swipe{
+    100%{
+        opacity: 0;
+        transform: translateY(10px) scale(0.95);
+    }
+}
+@media screen and (max-width: 1163px){
+    footer i{
+        margin-top: -1px;
+    }
+}
+@media screen and (max-width: 457px){
+    footer{
+        width: 457px !important;
+    }
+}
