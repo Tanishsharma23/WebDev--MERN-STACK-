@@ -1,0 +1,38 @@
+#OuterBox{
+    border: 1px solid black;
+    width: 16rem;
+    height: 12rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    
+}
+
+.inner{
+    border: 1px solid black;
+    width: 4rem;
+    height: 3rem;
+    position: relative;
+}
+.num{
+    position:absolute;
+    right:50%;
+    left:40%;
+    top: 30%;
+    bottom: 50%;
+     
+}
+.inner:hover {
+
+    cursor: pointer;
+    background-color: green;
+    color: ivory;
+    
+
+
+
+
+}
